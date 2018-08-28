@@ -26,19 +26,29 @@ public class ex4 {
 	}
 	
 	public static void imprimeEntrada() {
-		System.out.print("A entrada foi: ");
+		System.out.print("A entrada foi: entrada[");
 		for(int a = 0; a<entrada.length; a++) {
-			System.out.print(entrada[a] + " ");
+			if(a != 9) {
+				System.out.print(entrada[a] + ", ");
+				}else {
+					System.out.print(entrada[a]);
+				}
 		}
+		System.out.print("]");
 		imprimeSaida();
 	}
 	
 	public static void imprimeSaida() {
 		System.out.println("");
-		System.out.print("A saída é: ");
+		System.out.print("A saída é: saida[");
 		for (int b = 0; b<saida.length;b++) {
-			System.out.print(saida[b] + " ");
+			if(b != 9) {
+			System.out.print(saida[b] + ", ");
+			}else {
+				System.out.print(saida[b]);
+			}
 		}
+		System.out.print("]");
 	}
 	
 	public static void main(String[] args) {
